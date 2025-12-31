@@ -17,6 +17,18 @@ For more details, reference the official documentation: [https://pestphp.com/doc
 
 Architecture testing enables you to specify expectations that test whether your application adheres to a set of architectural rules, helping you maintain a clean and sustainable codebase. The expectations are determined by either relative namespaces, fully qualified namespaces, or function names.
 
+
+### Configuration
+
+The architecture test directory is configured in `phpunit.xml` to include the `tests/Arch` directory in the test suite.
+
+```xml
+<testsuite name="Architecture">
+    <directory>tests/Arch</directory>
+</testsuite>
+```
+
+
 Here is an example of how you can define an architectural rule:
 
 ```php
